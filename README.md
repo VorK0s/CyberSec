@@ -1,4 +1,4 @@
-ываав ывавраы
+пытаюсь развиваться в веб-разработке
 
 <!---
 VorK0s/VorK0s is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
