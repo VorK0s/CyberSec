@@ -1,0 +1,55 @@
+/*------------------------- main ----------------------*/
+.about_section h2 {
+    color: var(--color-green-10);
+}
+.about_img img {
+    height: 200px;
+    pointer-events: none;
+}
+.about_section__block{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    border-bottom: solid 3px var(--color-black-25)
+}
+.about_section-block__text{
+    color: var(--color-black-80);
+    margin: 15px;
+    line-height: 26px;
+    text-align: left;
+}
+.about_section-block__image{
+    width: 40%;
+}
+
+.achievement{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: var(--color-black-25);
+    border-radius: 75px;
+    width: 90%;
+    margin: 0 auto 30px;
+    text-align: left;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+.achievement img{
+    display: block;
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+    background-color: var(--color-green-10);
+    margin: 5px 30px 5px 5px;
+    text-align: center;
+}
+
+.block-achievements{
+    gap: 20px 20px;
+    width: 1100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+}

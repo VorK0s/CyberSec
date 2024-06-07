@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+		<link rel="shortcut icon" href="img/SignUpFavicon.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="css/src/global.css">
+        <link rel="stylesheet" href="css/src/media.css">
+        <link rel="stylesheet" href="css/src/animations.css">
+
+        <link rel="stylesheet" href="css/lib/colors.css">
+        <link rel="stylesheet" href="css/lib/typographic.css">
+
+		<link rel="stylesheet" href="css/pages/signup.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+        <title>Регистрация</title>
+    </head>
+
+    <body>
+        <section id="dynamic_background">
+			<div class="signup hidden" id="warning">
+				<div class="content">
+					<h2>Предупреждение</h2>
+
+					<p>
+						Если вы всё-таки ввели свои данные, то вы мало знаете о киберпреступности
+                        и безопасности в сети "Интернет", это был первый урок, не стоит вводить свою почту и другие
+                        сведения связанные о вас на неизвестных вам и обществу сайтах, всегда сверяйте URL.
+                        <br>
+                        Ну а если вы не ввели, то мои поздравления, вы не попадетёсь на уловку других мошенников,
+                        которые жаждут поглотить ваши данные.
+					</p>
+
+					<div class="form">
+						<div class="links">
+							<a href="#"></a>
+							<a href="index.html">Далее -></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+            <div class="signup visible" id="signup">
+                <div class="content">
+                    <h2>Регистрация</h2>
+                    <div class="form">
+						<div class="inputBox">
+							<input type="email" name="email" id="email" required>
+							<label for="email">Email</label>
+						</div>
+
+						<div class="inputBox">
+                            <input type="text" name="name" id="name" required>
+							<label for="name">Имя пользователя</label>
+                        </div>
+
+                        <div class="inputBox">
+                            <input type="password" name="password" id="password" required>
+							<label for="password">Пароль</label>
+                        </div>
+
+						<div class="inputBox">
+							<input type="password" name="password2" id="password2" required>
+							<label for="password2">Повторите пароль</label>
+						</div>
+
+                        <div class="links">
+                            <a href="#"></a>
+                            <a href="#" id="signup_pass">Пропустить -></a>
+                        </div>
+
+                        <div class="inputBox">
+                            <input type="submit" value="Войти" id="signup_submit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    	<script src="js/src/elementsToggle.js?v=1"></script>
+		<script src="js/src/background.js?v=1"></script>
+    </body>
+</html>

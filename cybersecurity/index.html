@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+		<link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+
+		<link rel="stylesheet" href="css/src/global.css">
+		<link rel="stylesheet" href="css/src/media.css">
+		<link rel="stylesheet" href="css/src/animations.css">
+
+		<link rel="stylesheet" href="css/lib/colors.css">
+		<link rel="stylesheet" href="css/lib/typographic.css">
+
+		<link rel="stylesheet" href="css/pages/index.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+		<title>Главная</title>
+	</head>
+
+	<body>
+	<nav class="nav">
+		<div class="menu">
+			<h1 class="menu-title">
+				Cybersecurity
+			</h1>
+			<ol class="menu-list">
+				<li class="menu-list_item" id="video_lamp">
+					<button id="video_btn">Видеоматериалы</button>
+				</li>
+				<li class="menu-list_item" id="lastNews_lamp">
+					<button id="lastNews_btn">Последние новости</button>
+				</li>
+				<li class="menu-list_item" id="recommend_lamp">
+					<button id="recommend_btn">Рекомендации</button>
+				</li>
+				<li class="menu-list_item" id="ourAchievement_lamp">
+					<button id="ourAchievement_btn">Наши достижения</button>
+				</li>
+				<li class="menu-list_item active" id="about_lamp">
+					<button id="about_btn">О сайте</button>
+				</li>
+			</ol>
+		</div>
+	</nav>
+
+	<main class="main">
+		<section id="video_section" class="section hide">
+			<h2>Видео по кибербезопасности</h2>
+
+			<div id="player"></div>
+		</section>
+
+		<section id="lastNews_section" class="section hide">
+			<h2 class="section-title">Последние новости</h2>
+			<details class="news">
+				<summary>атаки на VPN сервисы развиваются в большом количестве</summary>
+				<div class="news__content">
+					<p>
+						Атаки на сервисы VPN начали набирать обороты, по известным данным были обнаружены попытки входа
+						с использованием старых локальных учётных записей, где авторизация была ТОЛЬКО по паролю
+					</p>
+					<span>29 мая 2024 10:35</span>
+					<span>Источник: SecurityLab</span>
+				</div>
+			</details>
+
+			<details class="news">
+				<summary>Кибератака на MITRE Corporation</summary>
+				<div class="news__content">
+
+					<p>
+                        Хакеры внедрили веб-оболочку JSP на сервер vCenter Server Tomcat для запуска
+                        инструмента туннелирования, что позволило киберпреступникам установить SSH-соединения между
+                        созданными виртуальными машинами.
+					</p>
+                    <p>
+                        Целью атаки было скрыть свои действия от интерфейса централизованного управления
+                        и сохранить постоянный доступ, сводя к минимуму риск обнаружения.
+                    </p>
+					<span>25 мая 2024 07:00</span>
+                    <span>Источник: SecurityLab</span>
+				</div>
+			</details>
+
+			<details class="news">
+				<summary>Прокачанный троян атакует банки по всему миру</summary>
+				<div class="news__content">
+					<p>
+						Масштабные фишинговые атаки, вероятно, осуществляемые другими киберпреступниками
+                        нацелены на более 1500 банков по всему миру из более чем 60 стран Центральной
+                        и Южной Америки, Африки, Европы и Индо-Тихоокеанского региона.
+					</p>
+                    <p>
+                        Атаки начинаются с фишинговых писем. Жертвы, кликнувшие по ссылке,
+                        перенаправляются на изображение PDF-иконки, которое в конечном итоге
+                        приводит к загрузке ZIP-архива с исполняемым загрузчиком.
+                        Этот специальный загрузчик искусственно раздут до 100 МБ, чтобы обойти антивирус.
+                        Ещё он проверяет, не находится ли хост в песочнице, собирает базовые данные жертвы
+                        на сервер контроля и управления и запускает основной троян
+                    </p>
+					<span>20 мая 2024 16:31</span>
+                    <span>Источник: SecurityLab</span>
+				</div>
+			</details>
+
+			<details class="news">
+				<summary>Злоумышленники атакуют сервисы продажи билетов</summary>
+				<div class="news__content">
+					<p>
+                        Апрель ознаменовался взрывным ростом количества кибератак на компании,
+                        которые занимаются грузопассажирскими перевозками. Количество выросло со 150 тысяч атак
+                        до 350 тысяч атак в сутки. Злоумышленники стремятся не только причинить финансовый ущерб
+                        перевозчикам, но также нанести репутационный урон, а также
+                        и причинить неудобства рядовым гражданам.
+					</p>
+					<span>Апрель 2024</span>
+                    <span>Источник: rcngroup</span>
+				</div>
+			</details>
+
+		</section>
+
+		<section id="recommend_section" class="section hide">
+			<h2 class="section-title">Рекомендации по защите в интернете</h2>
+
+			<p class="baseRec">
+				Ниже представлено руководство, с базовыми мерами по защите от самых распространённых видов атак.
+				Однако никто и никогда вам не предложит абсолютной защиты от интернет-угроз, это связанно с принципами
+				работы глобальной информационной сети. Применяйте эти знания на свой страх и риск.
+			</p>
+
+			<h3 class="pre-title border">Руководство</h3>
+
+			<div class="recContent">
+				<h3 class="recTitle">1. Кто такие киберпреступники и какие у них цели</h3>
+				<p class="recText">
+					Киберпреступники — это лица, которые нарушают нормы и правила,
+					связанные с применением компьютеров, сетей и технологий.
+					Они могут совершать разные виды правонарушений,
+					включая кражу личных сведений, махинации,
+					распространение вредоносных кодов и нарушение авторских прав.
+					Киберпреступники зачастую работают в интернете и
+					применяют разнообразные способы для достижения своих целей.
+				</p>
+				<h3 class="recTitle">2. Что нужно знать для базовой защиты</h3>
+				<p class="recText">
+					Чтобы обеспечить базовую защиту от киберпреступлений,
+					необходимо следовать следующим правилам:
+				</p>
+				<ol class="recList recText">
+					<li> Использовать антивирус;</li>
+					<li> Создавать сложные и уникальные пароли для каждого аккаунта;</li>
+					<li> Регулярно обновлять систему;</li>
+					<li> Следить за информацией о нарушениях безопасности данных на сайтах;</li>
+					<li> Не подключать чужие флешки и другие накопители;</li>
+					<li> Проверять информацию перед использованием;</li>
+				</ol>
+				<h3 class="recTitle">3. Как защититься от фишинга</h3>
+				<p class="recText">
+					Фишинг — это распространённый метод атаки,
+					при котором злоумышленник создаёт поддельный сайт, похожий на настоящий,
+					чтобы получить доступ к личной информации пользователей.
+				</p>
+				<p class="recText">
+					(не даёт <strong>полной</strong> гарантии защиты,
+					тут уже будет зависеть от вас)
+				</p>
+				<p class="recText">
+					Чтобы защититься от фишинга, следует проверять отправителя электронных писем и сообщений,
+					обращая внимание на адрес электронной почты. Проверять правописание,
+					т.к. фишинговые письма часто содержат слова по типу: "Пр1в3т".
+					Избегать перехода по подозрительным ссылкам, вводя адрес сайта в браузере.
+					Информировать близких о методах фишинга и способах защиты от него.
+				</p>
+				<h3 class="recTitle">4. Как защититься от SMS-Bomber'a</h3>
+				<p class="recText">
+					Если уже атакуют, то есть вариант сделать это:
+					Многие сервисы предлагают услуги в течение 20 минут.
+					Временное отключение устройства на 10–15 минут позволит остановить работу скрипта.
+				</p>
+				<p class="recText">
+					Для защиты лучше не делиться данными и номером телефона с незнакомцами. Обратиться к
+					своему оператору для настройки фильтра SMS. Установите приложение, которое позволяет
+					заблокировать спам. Убедитесь что стоит последняя версия системы, на последних версиях
+					защита всегда лучше предыдущей.
+				</p>
+				<h3 class="recTitle">5. Как защититься от деанона</h3>
+				<p class="recText">
+					Полностью вы конечно не сможете защититься, но,
+					есть несколько шагов, которые лучше соблюдать для безопасности
+				</p>
+				<ol class="recList recText">
+					<li> Не раскрывайте свои личные данные;</li>
+					<li> Используйте защищённую электронную почту с разными никнеймами;</li>
+					<li> Если есть возможность, то можно купить виртуальный либо же физ. номер,
+						который зарегистрирован на другое лицо, это повышает анонимность
+						и защиту от нарушителей</li>
+					<li> Необязательно, но лучше использовать анонимные браузеры либо поисковики;</li>
+					<li> Так же присутствует вариант покупке защитника или как ещё называют "дефа",
+						он может вас защитить от последующих нападений на вас преступниками
+						(насчёт других соцсетей не знаю, но телеграм и вк точно) ;</li>
+				</ol>
+			</div>
+		</section>
+
+		<section id="ourAchievement_section" class="section hide">
+			<h2 class="section-title">Наши достижения</h2>
+			<h3 class="pre-title"></h3>
+
+			<div class="achievement" id="achievement">
+				<img src="img/ourAchiv_section/epichero.png" alt="Богатырь с топором">
+
+				<div class="block-inner">
+					<h3>Не пройдёт теперь войско тёмное, не проскочит зверь незамеченный</h3>
+					<p>Защитить сайт от атаки ботнетов</p>
+				</div>
+			</div>
+
+			<div class="achievement" id="achievement">
+				<img src="img/ourAchiv_section/demon.png" alt="Фиолетовый демон">
+
+				<div class="block-inner">
+					<h3>Настоящий злодей</h3>
+					<p>Довести мошенника до удаления профиля</p>
+				</div>
+			</div>
+
+			<div class="achievement" id="achievement">
+				<img src="img/ourAchiv_section/genius.png" alt="Человек на синем фоне с мозгом">
+
+				<div class="block-inner">
+					<h3>Прочитал и уничтожил</h3>
+					<p>Оставить плохое послание хакеру в системе защиты</p>
+				</div>
+			</div>
+
+			<div class="achievement" id="achievement">
+				<img src="img/ourAchiv_section/anonymusGold.png" alt="Человек в золотой маске анонимуса">
+
+				<div class="block-inner">
+					<h3>Заявка в "Анонимус"</h3>
+					<p>Выйти в даркнет</p>
+				</div>
+			</div>
+			<div class="achievement" id="achievement">
+				<img src="img/ourAchiv_section/shield.png" alt="Щит с замком ">
+
+				<div class="block-inner">
+					<h3>Полная защита</h3>
+					<p>Поставить прокси на телеграм</p>
+				</div>
+			</div>
+			<div class="achievement" id="achievement">
+				<img src="img/ourAchiv_section/numbVirt.png" alt="Случайные цифры на неоновом фоне">
+
+				<div class="block-inner">
+					<h3>Нереальные циферки</h3>
+					<p>Купить виртуальный номер</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="about_section" class="section hide show">
+			<h2 class="section-title">Что находится на сайте?</h2>
+
+			<h3 class="pre-title">Раздел «Наши достижения» </h3>
+
+			<div class="about_section__block">
+				<p class="about_section-block__text">
+					В данном разделе будут собраны достижения создателей сайта,
+					они будут в виде ачивок, к примеру "Заявка в анонимус",
+					ну и ниже будет написано пояснение
+				</p>
+
+				<img class="about_section-block__image"
+					 src="img/about_section/ourAchievements.png"
+					 alt="Спецназ и босс держат золотой кубок"
+                     id="about_section-block__image">
+			</div>
+
+			<h3 class="pre-title">Раздел «Рекомендации»</h3>
+
+			<div class="about_section__block">
+				<img class="about_section-block__image"
+					 src="img/about_section/recommendation.png"
+					 alt="плачущий хакер"
+                     id="about_section-block__image">
+
+				<p class="about_section-block__text">
+					В данном разделе будут собраны рекомендации по защите от разных кибератак и их избежания, в него
+					входят популярные на данный момент "SMS-бомбер (спам)","деанон" полной защиты
+					конечно никто не даёт, поэтому раздел и называется «Рекомендации».
+				</p>
+			</div>
+
+			<h3 class="pre-title">Раздел «Последние новости»</h3>
+
+			<div class="about_section__block">
+				<p class="about_section-block__text">
+					В данном разделе будут собраны последние новости в сфере кибербезопасности, возьмём на пример
+					"Компания Apple защитила данные пользователей IOS 17", "Была найдена и устранена лазейка в защите
+					базы данных компании Amazon", "Бывший сотрудник Google смог найти преступника, который совершал
+					DDoS атаку всей улицы на протяжении недели!" (это просто пример, тут всё выдумано).
+				</p>
+
+				<img class="about_section-block__image"
+					 src="img/about_section/lastNews.png"
+					 alt="Часы в огне у которых идёт время и рядом зелёный щит"
+                     id="about_section-block__image">
+			</div>
+
+			<h3 class="pre-title">Раздел «Видеоматериалы»</h3>
+
+			<div class="about_section__block">
+				<img class="about_section-block__image"
+					 src="img/about_section/videoMaterials.png"
+					 alt="Видеокамера и кассета"
+                     id="about_section-block__image">
+
+				<p class="about_section-block__text">
+					В данном разделе будут собраны видеоролики о базовых знаниях для того чтобы не попасть под руку
+					киберпреступников, конечно, есть раздел «Рекомендации», но там говориться не о всём и не в
+					подробностях, кто знает что может случиться, вдруг знания из видеороликов вам пригодятся.
+				</p>
+			</div>
+		</section>
+	</main>
+
+		<section id="dynamic_background"></section>
+    	<script src="js/src/background.js?v=1"></script>
+		<script src="js/src/sectionsToggle.js?v=1"></script>
+		<script src="js/ext/playerjs.js"></script>
+
+		<script>
+			let player = new Playerjs( { id:"player" } );
+		</script>
+	</body>
+</html>

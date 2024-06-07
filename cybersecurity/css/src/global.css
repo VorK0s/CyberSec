@@ -1,0 +1,202 @@
+/*-------------------------- body ------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-family: "Comfortaa", sans-serif;
+}
+
+/*--------------------------- nav ------------------------*/
+
+.nav{
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 4px;
+    z-index: 1000;
+    background-color: var(--color-black-10);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+/*-------------------------- menu ------------------------*/
+
+.menu {
+    padding: 20px 0;
+}
+.menu-list {
+    text-align: center;
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.menu-title {
+    margin-bottom: 10px;
+    color: var(--color-green);
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+}
+.menu-list_item button {
+    background-color: var(--color-black-10);
+    color: var(--color-white);
+    font-family: Comfortaa, sans-serif;
+    margin: auto 5px;
+    text-align: center;
+    border: solid 2px var(--color-green-10);
+    border-radius: 25px;
+    padding: 10px 15px;
+}
+.menu-list_item:hover button {
+    cursor: pointer;
+    background-color: var(--color-green-10);
+}
+.menu-list_item:active button,
+.menu-list_item.active button {
+    background-color: var(--color-green-20);
+    border: solid 2px var(--color-green-20);
+}
+
+/*-------------------------- main ------------------------*/
+
+.main {
+    margin: 40px auto;
+    width: 1200px;
+    background-color: var(--color-black-10);
+    z-index: 1000;
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+/*------------------------ details ----------------------*/
+details {
+    margin: 40px;
+}
+.news {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 15px 30px;
+    border-radius: 6px;
+    z-index: 1000;
+    color: white;
+    background-color: var(--color-black-35);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    line-height: 28px;
+
+}
+.news:hover {
+    cursor: default;
+}
+.news summary {
+    text-transform: uppercase;
+    padding: 20px;
+    color: var(--color-green);
+}
+.news summary:hover {
+    cursor: pointer;
+}
+.news .news__content{
+    max-height: 0;
+    overflow: hidden;
+    border-radius: 6px;
+    padding: 4px 4px 20px;
+    background-color: var(--color-black-25);
+    transition: max-height 1s ease-out;
+}
+.news[open] .news__content{
+    max-height: 1500px;
+}
+.news .news__content span {
+    display: block;
+    margin: 15px auto;
+}
+/*------------------------ sections ----------------------*/
+.section{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/*------------------- recommend ---------------------*/
+.recContent {
+    background-color: var(--color-black-10);
+    max-width: 900px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.recText {
+    text-align: left;
+    margin: 25px auto;
+}
+.recList {
+    margin-top: 10px;
+}
+.recList li {
+    padding: 10px 0
+}
+
+/*----------------------- background ---------------------*/
+
+#dynamic_background {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    flex-wrap: wrap;
+}
+#dynamic_background span {
+    position: relative;
+    display: block;
+    width: calc(6.5vw - 2px);
+    height: calc(6.5vw - 2px);
+    background-color: #181818;
+    z-index: 2;
+    transition: 1.5s;
+}
+#dynamic_background:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(var(--color-black), var(--color-green), var(--color-black));
+}
+
+/*------------------------- another ----------------------*/
+
+.hidden {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.border {
+    padding: 20px 0 ;
+    border-bottom: solid 3px var(--color-black-25)
+}
+.shadow {
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
